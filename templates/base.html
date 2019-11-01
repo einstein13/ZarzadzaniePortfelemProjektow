@@ -7,6 +7,15 @@
 <body>
 <body>
 <main>
+    {% block menubar %}
+    <ul>
+        <li><a href="{% url 'home' %}">Informacje</a></li>
+        <li><a href="{% url 'signup' %}">Zarejestruj</a></li>
+        <li><a href="{% url 'home' %}">Zaloguj się</a></li>
+        <li><a href="{% url 'home' %}">Gra</a></li>
+        <li><a href="{% url 'home' %}">Wyniki</a></li>
+    </ul>
+    {% endblock %}
     {% block content %}
     {% endblock %}
 </main>

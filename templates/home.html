@@ -3,6 +3,11 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
+
+<div>
+    Tutaj są jakieś informacje o tym, czym jest gra.
+</div>
+
 {% if user.is_authenticated %}
 <h2>Hi {{ user.username }}! </h2>
 <p><a href="{% url 'logout' %}">logout</a></p>
