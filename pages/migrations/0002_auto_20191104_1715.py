@@ -9,7 +9,7 @@ from django.db import migrations
 def fill_pages(apps, schema_editor):
     HtmlContent = apps.get_model('pages', 'HtmlContent')
     data = [
-        {'keyword': 'homepage-content', 'content': '<p>Cośtam jest innego</p>'},
+        {'keyword': 'homepage-content', 'content': '<p>Celem gry jest maksymalizacja zwrotu z portfela projektów. Zwrot jest rozumiany jako stosunek zysków do kosztów.</p><p>Gra składa się z rund. W każdej rundzie generowane są losowo dane na temat dziewięciu projektów. Zadaniem gracza jest wybór trzech spośród dziewięciu podanych projektów, które łącznie tworzą portfel.</p><p>Po zatwierdzeniu portfela generowane są losowo rzeczywste zyski projektów. Losowanie odbywa się zgodnie z podanymi na wykresach rozkładami prawdopodobieństwa realizacji przychodów dla poszczególnych projektów.</p><p>Podgląd wykresów jest możliwy po kliknięciu odpowiedniego projektu. Przed zatwierdzeniem portfela można zobaczyć wykres funkcji zysków wszystkich portfeli względem ryzyka (mapa).</p>'},
     ]
     for el in data:
         if 'keyword' not in el:
