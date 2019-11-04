@@ -1,11 +1,13 @@
 {% extends 'base.html' %}
 
+{% load pages_content %}
+
 {% block title %}Home{% endblock %}
 
 {% block content %}
 
 <div>
-    Tutaj są jakieś informacje o tym, czym jest gra.
+    {{ 'homepage-content'|html_content }}
 </div>
 
 {% if user.is_authenticated %}
