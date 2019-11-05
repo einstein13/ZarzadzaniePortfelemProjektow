@@ -8,6 +8,5 @@ register = template.Library()
 def html_content(keyword):
     hc = HtmlContent.objects.filter(keyword=keyword)
     if hc.count() == 1:
-        print(hc[0].content)
         return hc[0].content
     return keyword
